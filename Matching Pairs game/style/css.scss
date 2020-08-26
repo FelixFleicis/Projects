@@ -1,0 +1,54 @@
+.gamePad{
+     border: 10px;
+     width: 500px;
+     height: 500px;
+     border-color: black;
+     display: -webkit-box;
+     display: -ms-flexbox;
+     display: flex;
+     /* Then we define the flow direction 
+            and if we allow the items to wrap 
+          * Remember this is the same as:
+          * flex-direction: row;
+          * flex-wrap: wrap;
+          */
+     -webkit-box-orient: horizontal;
+     -webkit-box-direction: normal;
+     -ms-flex-flow: row wrap;
+     flex-flow: row wrap;
+     /* Then we define how is distributed the remaining space */
+     -ms-flex-pack: distribute;
+     /*justify-content: space-around;*/
+     justify-content: space-around;
+     padding: 0;
+     margin: 0;
+     list-style: none;
+
+}
+.gamePad__start{
+        
+       
+        width: 100px;
+        height: 25px;
+        
+
+}
+.gamePad__row{
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.gamePad__row--card{
+    width: 100px;
+    height: 100px;
+    border: 3px;
+    border-radius: 10%;
+    background: red;
+    margin: 10px;
+    text-align: center;
+    //color:red;
+    color: red;
+    font-size: large;
+
+
+}

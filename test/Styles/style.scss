@@ -1,0 +1,67 @@
+body{
+    background-repeat: no-repeat;
+    background-size: cover;
+    
+}
+h1 {
+    font-family: "Raleway", Arial, sans-serif;
+    letter-spacing: 6px;
+    
+    font-weight:400;
+    margin:10px 0;
+    font-size:36px
+    
+    
+}
+p{
+    font-family: "Raleway", Arial, sans-serif;
+    font-size: large;
+    
+    word-wrap: break-word;
+    
+    
+    
+    
+}
+.firstpage{
+    display: flex;
+    flex-direction: column;
+    justify-items: center;
+    align-items: center;
+
+}
+.firstpage__statement{
+    justify-items: center;
+    align-items: center;
+    width: 50%;
+    height: 200px;
+    word-wrap: break-word;
+    
+ 
+   
+   
+
+  
+
+}
+.firstpage__title{
+   
+    margin-top:80px;
+    margin-bottom:16px;
+    text-align:center!important;
+    padding:128px 16px
+    
+    
+}
+.title__career{
+    opacity: 0.55;
+    font-size:24px!important;
+}
+.title__name{
+    opacity: 0.75;
+    margin-top: 40px;
+}
+.firstpage__navbar{
+    padding-top:32px!important;
+    padding-bottom:32px!important;
+}

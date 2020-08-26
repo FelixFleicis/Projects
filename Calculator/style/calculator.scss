@@ -1,0 +1,127 @@
+
+.calculator {
+    width: 320px;
+    border: 1px solid black;
+    height: 480px;
+  }
+  
+  .calculator__screen {
+    background: black;
+    width: 320px;
+    height: 80px;
+    margin-bottom: 0px;
+    z-index: -1;
+    font-size: xx-large;
+    color: white;
+    text-align: right;
+  }
+  
+  .calculator__keyboard {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    /* Then we define the flow direction 
+         and if we allow the items to wrap 
+       * Remember this is the same as:
+       * flex-direction: row;
+       * flex-wrap: wrap;
+       */
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+    -ms-flex-flow: row wrap;
+    flex-flow: row wrap;
+    /* Then we define how is distributed the remaining space */
+    -ms-flex-pack: distribute;
+    /*justify-content: space-around;*/
+    padding: 0;
+    margin: 0;
+    list-style: none;
+    width: 320px;
+  }
+  
+  
+  button:hover {
+    background: gray;
+  }
+  
+  .key--num {
+    background: yellowgreen;
+    width: 80px;
+    height: 80px;
+    text-align: center;
+    border: 1px solid white;
+    float: left;
+    font-size: x-large;
+    color: white;
+  
+  }
+  .key--dec {
+    background: yellowgreen;
+    width: 80px;
+    height: 80px;
+    text-align: center;
+    border: 1px solid white;
+    float: left;
+    font-size: x-large;
+    color: white;
+  
+  }
+  
+  .key--time {
+    background: lightblue;
+    width: 160px;
+    height: 80px;
+    text-align: center;
+    border: 1px solid white;
+    float: left;
+    font-size: x-large;
+    color: white;
+   
+  }
+  
+  .key--ac {
+    background: orange;
+    width: 80px;
+    height: 80px;
+    text-align: center;
+    border: 1px solid white;
+    float: left;
+    font-size: x-large;
+    color: white;
+   
+  }
+  
+  .key--operator{
+    background: lightcoral;
+    width: 80px;
+    height: 80px;
+    text-align: center;
+    border: 1px solid white;
+    float: left;
+    font-size: x-large;
+    color: white;
+  }
+  
+  .key--equal{
+    background: lightcoral;
+    width: 80px;
+    height: 80px;
+    text-align: center;
+    border: 1px solid white;
+    float: left;
+    font-size: x-large;
+    color: white;
+  
+  }
+  
+  .key--zero {
+    background: yellowgreen;
+    width: 160px;
+    height: 80px;
+    text-align: center;
+    border: 1px solid white;
+    float: left;
+    font-size: x-large;
+    color: white;
+  
+  }

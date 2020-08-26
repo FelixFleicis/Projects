@@ -1,136 +1,189 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" type="text/css" href="stylesheet/css.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" type="text/css" href="stylesheet/css.css">
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css"
+    integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
     <title>CARD DEMO</title>
+
 </head>
-<ul class="flex-container">
-  <li class="flex-container_item">
-    <div class="cardContainer" >
-      <div>
-        <input type="checkbox" name="heart" id="heartbtn" />
-        <label class="btn-love" for="heartbtn"></label>
-      </div>
-      <div class="image">
-        
-        <img class="image_houseImage" src="images/房子外部.jpg" alt="House">
-      </div>
-      
-      <div class="Content">
-        <div class="Content_rating">
-          <span>☆</span><span>☆</span><span>☆</span><span>☆</span><span>☆</span>
+
+<body>
+  <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+    <a class="navbar-brand" href="#">Booking Hotel</a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarNavDropdown">
+      <ul class="navbar-nav">
+        <li class="nav-item active">
+          <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+        </li>
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" href="#" id="locationDropdownMenuLink" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+            Location
+          </a>
+          <div class="dropdown-menu" aria-labelledby="locationDropdownMenuLink">
+            <a class="dropdown-item" href="#">Melbourne</a>
+            <a class="dropdown-item" href="#">Sydney</a>
+            
           </div>
-        <div class="Content_para">
-          <h5>The White Villa</h5>
-          <p class="greysansserif"> Melbourne Australia. </p>
-          <p class="sansserif">Price: <b>$200</b> one night.</p>
-          
-        </div>
-       
-        <div class="Content_reservebtn">
-          <button class="Content_reservebtn--checkbtn"  onclick="location.href='avaliability.html'" ><span>Reserve</span></button>
-        </div>
-      </div>
-      
-    </div>
-  </li>
-  <li class="flex-container_item">
-    <div class="cardContainer" >
-      <div>
-        <input type="checkbox" name="heart" id="heartbtn2" />
-        <label class="btn-love" for="heartbtn2"></label>
-      </div>
-      <div class="image" >
-        
-        <img class="image_houseImage" src="images/palm tree house.jpg" alt="palm tree House">
-      </div>
-      
-      <div class="Content">
-        <div class="Content_rating">
-          <span>☆</span><span>☆</span><span>☆</span><span>☆</span><span>☆</span>
+        </li>
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" href="#" id="pricingDropdownMenuLink" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+            Pricing
+          </a>
+          <div class="dropdown-menu" aria-labelledby="pricingDropdownMenuLink">
+            <a class="dropdown-item" href="#">$200</a>
+            <a class="dropdown-item" href="#">$100</a>
+            
           </div>
-        <div class="Content_para">
-          <h5>Palm Tree Villa</h5>
-          <p class="greysansserif"> Melbourne Australia. </p>
-          <p class="sansserif">Price: <b>$200</b> one night.</p>
-          
-        </div>
-       
-        <div class="Content_reservebtn">
-          <button class="Content_reservebtn--checkbtn"  onclick="location.href='avaliability.html'" ><span>Reserve</span></button>
-        </div>
-      </div>
-      
+        </li>
+      </ul>
     </div>
-
-  </li>
-  <li class="flex-container_item">
-    <div class="cardContainer" >
+  </nav>
   
+  <div class="cards">
+    <div class="cardContainer">
+
       <div>
-        <input type="checkbox" name="heart" id="heartbtn3" />
-        <label class="btn-love" for="heartbtn3"></label>
+        <input type="checkbox" name="heart" id="cardContainer--heartbtn" />
+        <label class="cardContainer__btn--love" for="cardContainer--heartbtn"></label>
       </div>
-      <div class="image" >
-        
-        <img class="image_houseImage" src="images/swim pool house.jpg" alt="swim pool House">
+
+      <div class="cardContainer__image">
+        <img class="cardContainer__image--houseImage" src="images/house.jpg" alt="House">
       </div>
-      
-      <div class="Content">
-        <div class="Content_rating">
+
+      <div class="cardContainer__Content">
+
+        <div class="cardContainer__Content--para">
+          <h6>The White Villa</h6>
+          <p class="greyArial"> Melbourne Australia. </p>
+          <p class="Arial">Price: <b>$200</b> one night.</p>
+        </div>
+
+        <div class="cardContainer__Content--rating">
           <span>☆</span><span>☆</span><span>☆</span><span>☆</span><span>☆</span>
-          </div>
-        <div class="Content_para">
-          <h5>The Palace</h5>
-          <p class="greysansserif"> Melbourne Australia. </p>
-          <p class="sansserif">Price: <b>$200</b> one night.</p>
-          
         </div>
-       
-        <div class="Content_reservebtn">
-          <button class="Content_reservebtn--checkbtn"  onclick="location.href='avaliability.html'" ><span>Reserve</span></button>
+
+        <div class="cardContainer__Content--reservebtn">
+          <button class="cardContainer__Content--checkbtn"
+            onclick="location.href='avaliability.html'"><span>Reserve</span></button>
         </div>
       </div>
-      
+
+
     </div>
-  </li>
-  <li class="flex-container_item">
-    <div class="cardContainer" >
-  
+
+
+    <div class="cardContainer">
       <div>
-        <input type="checkbox" name="heart" id="heartbtn4" />
-        <label class="btn-love" for="heartbtn4"></label>
+        <input type="checkbox" name="heart" id="cardContainer--heartbtn1" />
+        <label class="cardContainer__btn--love" for="cardContainer--heartbtn1"></label>
       </div>
-    <div class="image" >
-      
-      <img class="image_houseImage" src="images/studiomet.jpg" alt="studiomet House">
-    </div>
-    
-    <div class="Content">
-      <div class="Content_rating">
-        <span>☆</span><span>☆</span><span>☆</span><span>☆</span><span>☆</span>
+      <div class="cardContainer__image">
+
+        <img class="cardContainer__image--houseImage" src="images/palm tree house.jpg" alt="palm tree House">
+      </div>
+
+      <div class="cardContainer__Content">
+
+        <div class="cardContainer__Content--para">
+          <h6>Palm Tree House</h6>
+          <p class="greyArial"> Melbourne Australia. </p>
+          <p class="Arial">Price: <b>$200</b> one night.</p>
         </div>
-      <div class="Content_para">
-        <h5>The Modern Villa</h5>
-        <p class="greysansserif"> Melbourne Australia. </p>
-        <p class="sansserif">Price: <b>$200</b> one night.</p>
-        
-      </div>
-     
-      <div class="Content_reservebtn">
-        <button class="Content_reservebtn--checkbtn"  onclick="location.href='avaliability.html'" ><span>Reserve</span></button>
+
+        <div class="cardContainer__Content--rating">
+          <span>☆</span><span>☆</span><span>☆</span><span>☆</span><span>☆</span>
+        </div>
+
+        <div class="cardContainer__Content--reservebtn">
+          <button class="cardContainer__Content--checkbtn"
+            onclick="location.href='avaliability.html'"><span>Reserve</span></button>
+        </div>
       </div>
     </div>
-    
-  </div></li>
-
-</ul>
 
 
 
-  
-</div>
+
+
+    <div class="cardContainer">
+      <div>
+        <input type="checkbox" name="heart" id="cardContainer--heartbtn2" />
+        <label class="cardContainer__btn--love" for="cardContainer--heartbtn2"></label>
+      </div>
+      <div class="cardContainer__image">
+
+        <img class="cardContainer__image--houseImage" src="images/swim pool house.jpg" alt="The Palace">
+      </div>
+
+      <div class="cardContainer__Content">
+
+        <div class="cardContainer__Content--para">
+          <h6>The Palace</h6>
+          <p class="greyArial"> Melbourne Australia. </p>
+          <p class="Arial">Price: <b>$200</b> one night.</p>
+        </div>
+
+        <div class="cardContainer__Content--rating">
+          <span>☆</span><span>☆</span><span>☆</span><span>☆</span><span>☆</span>
+        </div>
+
+        <div class="cardContainer__Content--reservebtn">
+          <button class="cardContainer__Content--checkbtn"
+            onclick="location.href='avaliability.html'"><span>Reserve</span></button>
+        </div>
+      </div>
+    </div>
+
+
+
+
+
+
+    <div class="cardContainer">
+      <div>
+        <input type="checkbox" name="heart" id="cardContainer--heartbtn3" />
+        <label class="cardContainer__btn--love" for="cardContainer--heartbtn3"></label>
+      </div>
+      <div class="cardContainer__image">
+
+        <img class="cardContainer__image--houseImage" src="images/studiomet.jpg" alt="The Modern Villa">
+      </div>
+
+      <div class="cardContainer__Content">
+
+        <div class="cardContainer__Content--para">
+          <h6>The Modern Villa</h6>
+          <p class="greyArial"> Melbourne Australia. </p>
+          <p class="Arial">Price: <b>$200</b> one night.</p>
+        </div>
+
+        <div class="cardContainer__Content--rating">
+          <span>☆</span><span>☆</span><span>☆</span><span>☆</span><span>☆</span>
+        </div>
+
+        <div class="cardContainer__Content--reservebtn">
+          <button class="cardContainer__Content--checkbtn"
+            onclick="location.href='avaliability.html'"><span>Reserve</span></button>
+        </div>
+      </div>
+    </div>
+
+
+  </div>
+
+
+
 </body>
+
 </html>
